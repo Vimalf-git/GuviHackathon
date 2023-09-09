@@ -10,32 +10,53 @@
 </head>
 
 <body>
-    <div class="main">
+    <div class="main" id="main">
         <!-- Header-position -->
         <header class="nav-sec">
+            
             <div class="nav-con">
                 <h4>PORTFOLIO</h4>
             </div>
-            <div class="nav-li-bar">
+            <nav class="navbar nav-tog">
+                <button class="navbar-toggler toggle" id="toogle-btn" onclick="toggle()">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+
+            <div class="nav-li-bar" id="model">
+
                 <ul class="nav-li-menu">
                     <li><a class="btn" href="#home">Home</a></li>
                     <li><a class="btn" href="#skill">Skill</a></li>
                     <li><a class="btn" href="#project">Projects</a></li>
                     <li><a class="btn" href="#about">About</a></li>
-                    <li><a class="btn btn-primary" href="#">Contact</a></li>
+                    <li><a class="btn btn-primary" href="#contact">Contact</a></li>
+                    </li>
+                    <div class="mode-cl">
+                        <a class="mode-switch" id="modeonicon" onclick="darkmode()">DarkMode</a>
+                    </div>
                 </ul>
+                
+               
             </div>
+           
         </header>
+
+
+
+
+
 
         <!-- Home -->
         <section class="home" id="home">
             <div class="pro-con">
                 <p> Hi there👋, <strong>I'm VimalRaj</strong></p>
-                <p>A passionate software developer</p>
-                <p>🔭 I’m Past working on TCS</p>
-                <p>🌱 I’m currently learning <strong>MEARN📖STACK </strong></p>
-                <p>💬 Ask me about MicroService, Spring Boot, spring JPA, Java 8, Sql, Hibernate, HTML, CSS, javaScript
-                </p>
+                <p>A passionate <span class="text-primary">Software Developer</span></p>
+                <p>🔭 I’m Past working on<span class="text-primary">TCS</span></p>
+                <p>🌱 I’m currently learning <span class="text-primary"><strong>MEARN📖STACK </strong></span></p>
+                <p>💬 Ask me about <span class="text-primary"> MicroService, Spring Boot, Spring JPA, Java 8, SQl,
+                        Hibernate, HTML, CSS, JavaScript,Bootstrap
+                    </span> </p>
             </div>
             <div class="profile-pl">
                 <img class="profile-img" src="./images/vimal.jpg" alt="profile-img">
@@ -49,44 +70,36 @@
             </div>
             <div class="skill-card">
                 <div class="card" style="width: 18rem;">
-                    <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-                    <div class="card-body">
-                        <p><i class="fa-solid fa-head-side-gear"></i></p>
+                    <div class="card-body d-flex justify-content-center align-items-center">
                         <h5 class="card-title d-flex justify-content-center">Communication</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
                     <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-                    <div class="card-body">
+                    <div class="card-body d-flex justify-content-center align-items-center">
                         <h5 class="card-title d-flex justify-content-center">Leadership</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                       
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
                     <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
                     <div class="card-body">
-                        <h5 class="card-title d-flex justify-content-center">Problem Solving</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <h5 class="card-title d-flex justify-content-center align-items-center">Problem Solving</h5>
+                        
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
                     <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
                     <div class="card-body">
-                        <h5 class="card-title d-flex justify-content-center">Team Work</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <h5 class="card-title d-flex justify-content-center align-items-center">Team Work</h5>
+    
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
                     <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
                     <div class="card-body">
-                        <h5 class="card-title d-flex justify-content-center">Time Management</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <h5 class="card-title d-flex justify-content-center align-items-center">Time Management</h5>
+                        
                     </div>
                 </div>
             </div>
@@ -149,7 +162,7 @@
         <!-- About-me -->
         <section class="about" id="about">
             <div class="about-l-con d-flex justify-content-center">
-                <h5>About</h5>
+                <h5>About Me</h5>
             </div>
             <div class="about-r-con">
                 <div class="about-pt">
@@ -172,20 +185,36 @@
                 <h5>Contact Me</h5>
             </div>
             <div class="contact-btn-li">
-                <a href="" class="con-btn btn btn-outline-primary"><i class="fa-solid fa-envelope"></i><span> SendMail</span></a>
-                <a href="" class="con-btn btn btn-outline-primary"><i class="fa-brands fa-linkedin"></i> <span> Connect</span></a>
-                <a href="" class="con-btn btn btn-outline-primary"><i class="fa-brands fa-square-github"></i><span>  Checkout</span></a>
-                <a href="" class="con-btn btn btn-outline-primary"><i class="fa-solid fa-share-from-square"></i> <span>  LeetCode</span></a>
-    
+                <a href="mailto:selvamvimaldz@gmail.com" class="con-btn btn btn-outline-primary"><i
+                        class="fa-solid fa-envelope"></i><span> SendMail</span></a>
+                <a href="https://www.linkedin.com/in/vimaltechie/" class="con-btn btn btn-outline-primary"><i
+                        class="fa-brands fa-linkedin"></i> <span> Connect</span></a>
+                <a href="https://github.com/Vimalf-git" class="con-btn btn btn-outline-primary"><i
+                        class="fa-brands fa-square-github"></i><span> Checkout</span></a>
+                <a href="https://leetcode.com/S_vimalRaj/" class="con-btn btn btn-outline-primary"><i
+                        class="fa-solid fa-share-from-square"></i> <span> LeetCode</span></a>
+
             </div>
-           
+
         </section>
 
 
         <footer class="footer bg-primary">
-                <p>Created By Vimal👨‍💻</p>
-                <p>&copy; All rights Reserved</p>
+            <p>Created By Vimal👨‍💻</p>
+            <p>&copy; All rights Reserved</p>
         </footer>
+
+
+
+
+        <!-- <div class="pos-f-t"> -->
+
+        <!-- </div> -->
+
+
+
+
+
     </div>
 
 
@@ -193,6 +222,7 @@
 
 
     <script src="./bootstrap-5.3.1-dist/js/bootstrap.bundle.js"></script>
+    <script src="./Portfolio.js"></script>
     <script src="https://kit.fontawesome.com/5e917f112f.js" crossorigin="anonymous"></script>
 </body>
 
